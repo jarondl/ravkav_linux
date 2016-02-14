@@ -1,0 +1,3 @@
+#!/bin/sh
+echo "$@" >> /home/jarondl/sysadmin/ravkav/ravkavparams.txt
+exec /usr/bin/java -jar -Duser.dir='/home/jarondl/sysadmin/ravkav/' '/home/jarondl/sysadmin/ravkav/RavKavOnline.jar' $@

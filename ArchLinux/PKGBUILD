@@ -1,0 +1,27 @@
+# Maintainer: Yaron de Leeuw  < me@jarondl.net >
+
+pkgname=ravkav-bin
+pkgver=0.1.4
+pkgrel=1
+pkgdesc="RavKav Online"
+url="https://github.com/jarondl/ravkav_linux"
+arch=('x86_64')
+license=('proprietary')
+depends=('java-runtime' 'pcsclite' 'desktop-file-utils')
+source=("$pkgname-$pkgver.zip::https://ravkavonline.co.il/releases/osx/ravkav-online-osx-$pkgver.zip"
+        'RavKavOnline.desktop'
+        'ravkav')
+
+sha256sums=('1d03942f105c3a6e0c61721dbdf440b3100c15d22d6b32aaf7b042601424a51b'
+            'e923f7af1e9bf073e1aedafab7e12a493bdd9351904032b59a477166c7da97f4'
+            '7ae4667d3bb029e3d05005a8a9bd8c4f0c101bddfa60abb199b10c6f18fb6ac8')
+ 
+
+
+package() {
+  install -D -m755 ravkav "${pkgdir}/usr/bin/ravkav"
+  install -D -m644 RavKavOnline.desktop "${pkgdir}/usr/share/applications/RavKavOnline.desktop"
+  install -D -m644 "RavKavOnline/RavKavOnline 64.app/Contents/Java/RavKavOnline.jar" "${pkgdir}/usr/share/java/ravkav/RavKavOnline.jar"
+}
+
+install="ravkav-bin.install"
