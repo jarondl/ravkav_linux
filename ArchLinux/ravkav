@@ -1,3 +1,3 @@
 #!/bin/sh
-echo "$@" >> /home/jarondl/sysadmin/ravkav/ravkavparams.txt
-exec /usr/bin/java -jar -Duser.dir='/home/jarondl/sysadmin/ravkav/' '/home/jarondl/sysadmin/ravkav/RavKavOnline.jar' $@
+RAVKAV_DIR="${XDG_CACHE_HOME-$HOME/.cache}/ravkav"
+exec /usr/bin/java -jar -Duser.dir="${RAVKAV_DIR}" "/usr/share/java/ravkav/RavKavOnline.jar" $@
