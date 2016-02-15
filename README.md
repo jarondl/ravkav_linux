@@ -36,3 +36,8 @@ Details
    the 'ravkav:' uri scheme. The ravkav website opens a websocket connection
    to the application by requesting a url of the form `ravkav:wss://proxy.ravkavonline.co.il/SOMEID`.
 
+ * An alternative to this approach, would be to put the `.desktop` file in
+   `$HOME/.local/share/applications/`, and to run `update-desktop-database ~/.local/share/applications`.
+   This would register the mime for this user only, instead of using the global location.
+   You can modify the `Exec` line, to run the `jar` instead of the shell script, and so
+   with only two files (`.jar` and `.desktop`) aou can use RavKavOnline.
