@@ -29,6 +29,8 @@ go to https://www.ravkavonline.co.il/
 
 Everything should work.
 
+Ubuntu
+------
 
 Details
 -------
