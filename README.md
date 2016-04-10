@@ -39,7 +39,7 @@ Take the whole Ubuntu directory. Run **as a normal user**. Enter root password o
 ./installRavKav.sh
 ``` 
 ####Script Overview
-Instead of using the 0.1.4 version from the MacOS zip file, this script takes the 0.1.8 version (and probably can be easily adapted to any one) which is about one year newer and the latest for the time of writing this readme (7/4/2016).
+Instead of using the 0.1.4 version from the MacOS zip file, this script takes the 0.1.8 version (and probably can be easily adapted to any one) which is about one year newer and the latest at the time of writing this readme (7/4/2016).
 (For my card reader bought at Dan (Identive CLOUD 2700 R Smart Card Reader), only the new version works (also on Windows)).
 Sadly, the company releases the newer versions only for Windows and not in zip format but as Advanced Installer setup.
 In order to extract the setup, the script installs wine and runs the setup using the extract parameter. This is the only use of Wine and it's an overkill - pull requests are welcome.
