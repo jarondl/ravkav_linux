@@ -40,4 +40,4 @@ Details
    `$HOME/.local/share/applications/`, and to run `update-desktop-database ~/.local/share/applications`.
    This would register the mime for this user only, instead of using the global location.
    You can modify the `Exec` line, to run the `jar` instead of the shell script, and so
-   with only two files (`.jar` and `.desktop`) aou can use RavKavOnline.
+   with only two files (`.jar` and `.desktop`) you can use RavKavOnline.
