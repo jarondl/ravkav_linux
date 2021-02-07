@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=RavKavOnline
+Exec="/usr/bin/ravkav" %u
+MimeType=x-scheme-handler/ravkav;
+NoDisplay=true
+

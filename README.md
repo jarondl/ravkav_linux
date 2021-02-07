@@ -29,6 +29,32 @@ go to https://www.ravkavonline.co.il/
 
 Everything should work.
 
+Ubuntu
+------
+
+####Installation
+Make sure you have Java installed before.
+Take the whole Ubuntu directory. Run **as a normal user**. Enter root password only when needed. Don't run the script as root (sudo) because then it will run wine as root which is not recommendend and can cause problems.
+```
+./installRavKav.sh
+``` 
+####Script Overview
+Instead of using the 0.1.4 version from the MacOS zip file, this script takes the 0.1.8 version (and probably can be easily adapted to any one) which is about one year newer and the latest at the time of writing this readme (7/4/2016).
+(For my card reader bought at Dan (Identive CLOUD 2700 R Smart Card Reader), only the new version works (also on Windows)).
+Sadly, the company releases the newer versions only for Windows and not in zip format but as Advanced Installer setup.
+In order to extract the setup, the script installs wine and runs the setup using the extract parameter. This is the only use of Wine and it's an overkill - pull requests are welcome.
+
+HopOn
+-----
+The Dan company uses another site: https://hopon.co.il
+This site checks the ravkavonline version (as of 7/4/2016, version 0.1.8) and will work only with one version.
+Using the trick from the Ubuntu script, the required version can be installed for the Dan company.
+This site has some checks for Windows.
+To bypass the check:
+* go to https://hopon.co.il
+* after the site is up go to https://hopon.co.il/#/read
+
+Now it should work and even Dan contracts can be bought.
 
 Details
 -------
